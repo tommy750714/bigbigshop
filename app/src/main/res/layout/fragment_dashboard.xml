@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ImageButton
+        android:id="@+id/food_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:contentDescription="food"
+        android:src="@drawable/food"
+        app:layout_constraintEnd_toStartOf="@+id/cosmetic_btn"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/care_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_btn"
+        android:contentDescription="care"
+        android:src="@drawable/care"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/cosmetic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/round_btn"
+        android:contentDescription="cosmetics"
+        android:src="@drawable/cosmetics"
+        app:layout_constraintEnd_toStartOf="@+id/care_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/clothing_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/clothing"
+        android:contentDescription="clothing"
+        app:layout_constraintBottom_toTopOf="@+id/clothing_tv"
+        app:layout_constraintEnd_toStartOf="@+id/health_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_tv" />
+
+    <ImageButton
+        android:id="@+id/health_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/health"
+        android:contentDescription="health"
+        app:layout_constraintEnd_toStartOf="@+id/electronic_btn"
+        app:layout_constraintTop_toBottomOf="@+id/cosmetivs_tv" />
+
+    <ImageButton
+        android:id="@+id/electronic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/electronic"
+        android:contentDescription="electronic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/care_tv" />
+
+    <ImageButton
+        android:id="@+id/digital_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/digital"
+        android:contentDescription="digital"
+        app:layout_constraintEnd_toStartOf="@+id/tasteful_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothing_tv" />
+
+    <ImageButton
+        android:id="@+id/tasteful_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/tasteful"
+        android:contentDescription="tasteful"
+        app:layout_constraintEnd_toStartOf="@+id/cook_btn"
+        app:layout_constraintTop_toBottomOf="@+id/health_tv" />
+
+    <ImageButton
+        android:id="@+id/cook_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/cook"
+        android:contentDescription="cook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electronic_tv" />
+
+    <ImageButton
+        android:id="@+id/kid_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/kid"
+        android:contentDescription="kid"
+        app:layout_constraintEnd_toStartOf="@+id/toy_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digital_btn" />
+
+    <ImageButton
+        android:id="@+id/toy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/toy"
+        android:contentDescription="toy"
+        app:layout_constraintEnd_toStartOf="@+id/sport_btn"
+        app:layout_constraintTop_toBottomOf="@+id/tasteful_btn" />
+
+    <ImageButton
+        android:id="@+id/sport_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/sport"
+        android:contentDescription="sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cook_btn" />
+
+    <ImageButton
+        android:id="@+id/stationary_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/stationary"
+        android:contentDescription="stationary"
+        app:layout_constraintEnd_toStartOf="@+id/pet_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kid_tv" />
+
+    <ImageButton
+        android:id="@+id/pet_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="170dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/pet"
+        android:contentDescription="pet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toy_tv" />
+
+    <TextView
+        android:id="@+id/food_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_food"
+        app:layout_constraintEnd_toStartOf="@+id/cosmetivs_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_btn" />
+
+    <TextView
+        android:id="@+id/cosmetivs_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_cosmetics"
+        app:layout_constraintEnd_toStartOf="@+id/care_tv"
+        app:layout_constraintTop_toBottomOf="@+id/cosmetic_btn" />
+
+    <TextView
+        android:id="@+id/care_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_care"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/care_btn" />
+
+    <TextView
+        android:id="@+id/clothing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_clothing"
+        app:layout_constraintEnd_toStartOf="@+id/health_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothing_btn" />
+
+    <TextView
+        android:id="@+id/health_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_health"
+        app:layout_constraintEnd_toStartOf="@+id/electronic_tv"
+        app:layout_constraintTop_toBottomOf="@+id/health_btn" />
+
+    <TextView
+        android:id="@+id/electronic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_electronic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electronic_btn" />
+
+    <TextView
+        android:id="@+id/digital_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_digital"
+        app:layout_constraintEnd_toStartOf="@+id/tasteful_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digital_btn" />
+
+    <TextView
+        android:id="@+id/tasteful_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_tasteful"
+        app:layout_constraintEnd_toStartOf="@+id/cook_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tasteful_btn" />
+
+    <TextView
+        android:id="@+id/cook_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_cook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cook_btn" />
+
+    <TextView
+        android:id="@+id/kid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_cook"
+        app:layout_constraintEnd_toStartOf="@+id/toy_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kid_btn" />
+
+    <TextView
+        android:id="@+id/stationary_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_stationary"
+        app:layout_constraintEnd_toStartOf="@+id/pet_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationary_btn" />
+
+    <TextView
+        android:id="@+id/pet_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="179dp"
+        android:text="@string/title_pet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_btn" />
+
+    <TextView
+        android:id="@+id/toy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_toy"
+        app:layout_constraintEnd_toStartOf="@+id/sport_tv"
+        app:layout_constraintTop_toBottomOf="@+id/toy_btn" />
+
+    <TextView
+        android:id="@+id/sport_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/title_sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

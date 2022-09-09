@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.food.FoodFragment">
+
+
+
+    <ScrollView
+        android:id="@+id/food_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp">
+
+                <TextView
+                    android:id="@+id/status_tv"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="209dp"
+                    android:layout_toEndOf="@+id/back_dashboard"
+                    android:text="/講飲講食" />
+
+                <ImageButton
+                    android:id="@+id/back_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_back" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/food_all_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/fresh_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="food"
+                    android:src="@drawable/food" />
+
+                <ImageButton
+                    android:id="@+id/fresh_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/cold_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="fresh"
+                    android:src="@drawable/fresh" />
+
+                <ImageButton
+                    android:id="@+id/cold_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="cold"
+                    android:src="@drawable/cold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/food_all_tv"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_toStartOf="@+id/fresh_tv"
+                    android:text="@string/title_food_all" />
+
+                <TextView
+                    android:id="@+id/fresh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/cold_tv"
+                    android:text="@string/title_fresh" />
+
+                <TextView
+                    android:id="@+id/cold_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/title_cold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/freeze_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/festival_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="freeze"
+                    android:src="@drawable/freeze" />
+
+                <ImageButton
+                    android:id="@+id/festival_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/coupon_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="festival"
+                    android:src="@drawable/festival" />
+
+                <ImageButton
+                    android:id="@+id/coupon_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="coupon"
+                    android:src="@drawable/coupon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/freeze_tv"
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_toStartOf="@+id/festival_tv"
+                    android:text="@string/title_freeze" />
+
+                <TextView
+                    android:id="@+id/festival_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:layout_toStartOf="@+id/coupon_tv"
+                    android:text="@string/title_festival" />
+
+                <TextView
+                    android:id="@+id/coupon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/title_coupon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/alcohol_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/drink_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="alcohol"
+                    android:src="@drawable/alcohol" />
+
+                <ImageButton
+                    android:id="@+id/drink_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/driedseafood_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="drink"
+                    android:src="@drawable/drink" />
+
+                <ImageButton
+                    android:id="@+id/driedseafood_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="driedseafood"
+                    android:src="@drawable/driedseafood" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/alcohol_tv"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toStartOf="@+id/drink_tv"
+                    android:text="@string/title_alchol" />
+
+                <TextView
+                    android:id="@+id/drink_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="86dp"
+                    android:layout_toStartOf="@+id/driedseafood_tv"
+                    android:text="@string/title_drink" />
+
+                <TextView
+                    android:id="@+id/driedseafood_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/title_driedseafood" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/snack_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/noodle_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="snack"
+                    android:src="@drawable/snack" />
+
+                <ImageButton
+                    android:id="@+id/noodle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/instant_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="noodle"
+                    android:src="@drawable/noodle" />
+
+                <ImageButton
+                    android:id="@+id/instant_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="instant"
+                    android:src="@drawable/instant" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/snack_tv"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_toStartOf="@+id/noodle_tv"
+                    android:text="@string/title_snack" />
+
+                <TextView
+                    android:id="@+id/noodle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/instant_tv"
+                    android:text="@string/title_noodle" />
+
+                <TextView
+                    android:id="@+id/instant_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/title_instant" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/can_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/rice_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="can"
+                    android:src="@drawable/can" />
+
+                <ImageButton
+                    android:id="@+id/rice_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/sauce_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="rice"
+                    android:src="@drawable/rice" />
+
+                <ImageButton
+                    android:id="@+id/sauce_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="sauce"
+                    android:src="@drawable/sauce" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/can_tv"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="37dp"
+                    android:layout_toStartOf="@+id/rice_tv"
+                    android:text="@string/title_can" />
+
+                <TextView
+                    android:id="@+id/rice_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:layout_toStartOf="@+id/sauce_tv"
+                    android:text="@string/title_rice" />
+
+                <TextView
+                    android:id="@+id/sauce_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/title_sauce" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/pickled_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/breakfast_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="pickled"
+                    android:src="@drawable/pickled" />
+
+                <ImageButton
+                    android:id="@+id/breakfast_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_toStartOf="@+id/organic_btn"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="breakfaast"
+                    android:src="@drawable/breakfast" />
+
+                <ImageButton
+                    android:id="@+id/organic_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="organic"
+                    android:src="@drawable/organic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pickled_tv"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_toStartOf="@+id/breakfast_tv"
+                    android:text="@string/title_pickled" />
+
+                <TextView
+                    android:id="@+id/breakfast_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="51dp"
+                    android:layout_toStartOf="@+id/organic_tv"
+                    android:text="@string/title_breakfast" />
+
+                <TextView
+                    android:id="@+id/organic_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="34dp"
+                    android:text="@string/title_organic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/other_btn"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="284dp"
+                    android:background="@drawable/round_btn"
+                    android:contentDescription="other"
+                    android:src="@drawable/other" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/other_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginEnd="298dp"
+                    android:text="@string/title_other" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

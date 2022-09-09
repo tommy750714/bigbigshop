@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.vegetable.VegetableFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/otherveg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="296dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="otherveg"
+            android:src="@drawable/otherveg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/melon_tv" />
+
+        <TextView
+            android:id="@+id/otherveg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="316dp"
+            android:text="@string/title_otherveg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otherveg_btn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="316dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="40dp"
+            android:text="/講飲講食/新鮮食品/蔬菜"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/back_fresh3"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/organicveg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="organicveg"
+            android:src="@drawable/organicveg"
+            app:layout_constraintEnd_toStartOf="@+id/localveg_btn"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/localveg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="loaclveg"
+            android:src="@drawable/localveg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/melon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="melon"
+            android:src="@drawable/melon"
+            app:layout_constraintEnd_toStartOf="@+id/mushroom_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetable_all_tv" />
+
+        <ImageButton
+            android:id="@+id/mushroom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="mushroom"
+            android:src="@drawable/mushroom"
+            app:layout_constraintEnd_toStartOf="@+id/soap_btn"
+            app:layout_constraintTop_toBottomOf="@+id/organicveg_tv" />
+
+        <ImageButton
+            android:id="@+id/soap_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="soap"
+            android:src="@drawable/soap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/localveg_tv" />
+
+        <ImageButton
+            android:id="@+id/vegetable_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="vegetable_all"
+            android:src="@drawable/vegetable"
+            app:layout_constraintEnd_toStartOf="@+id/organicveg_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/vegetable_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="55dp"
+            android:text="@string/title_vegetable_all"
+            app:layout_constraintEnd_toStartOf="@+id/organicveg_tv"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetable_all_btn" />
+
+        <TextView
+            android:id="@+id/melon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/title_melon"
+            app:layout_constraintEnd_toStartOf="@+id/mushroom_tv"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/melon_btn" />
+
+        <TextView
+            android:id="@+id/mushroom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:text="@string/title_watermelon"
+            app:layout_constraintEnd_toStartOf="@+id/soap_tv"
+            app:layout_constraintTop_toBottomOf="@+id/mushroom_btn" />
+
+        <TextView
+            android:id="@+id/soap_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="59dp"
+            android:text="@string/title_soap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soap_btn" />
+
+        <TextView
+            android:id="@+id/localveg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:text="@string/title_localveg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/localveg_btn" />
+
+        <TextView
+            android:id="@+id/organicveg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:text="@string/title_organicveg"
+            app:layout_constraintEnd_toStartOf="@+id/localveg_tv"
+            app:layout_constraintTop_toBottomOf="@+id/organicveg_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

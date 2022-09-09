@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fruit.FruitFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="316dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="40dp"
+            android:text="/講飲講食/新鮮食品/水果"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/back_fresh2"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/japan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="japan"
+            android:src="@drawable/japan"
+            app:layout_constraintEnd_toStartOf="@+id/taiwan_btn"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/taiwan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="taiwan"
+            android:src="@drawable/taiwan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/grape_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="grape"
+            android:src="@drawable/grape"
+            app:layout_constraintEnd_toStartOf="@+id/watermelon_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruit_all_tv" />
+
+        <ImageButton
+            android:id="@+id/watermelon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="watermelon"
+            android:src="@drawable/watermelon"
+            app:layout_constraintEnd_toStartOf="@+id/fruitcate_btn"
+            app:layout_constraintTop_toBottomOf="@+id/japan_tv" />
+
+        <ImageButton
+            android:id="@+id/fruitcate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="fruitcate"
+            android:src="@drawable/fruitcate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taiwan_tv" />
+
+        <ImageButton
+            android:id="@+id/fruit_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="fruit_all"
+            android:src="@drawable/fruit"
+            app:layout_constraintEnd_toStartOf="@+id/japan_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/fruit_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="55dp"
+            android:text="@string/title_fruit_all"
+            app:layout_constraintEnd_toStartOf="@+id/japan_tv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruit_all_btn" />
+
+        <TextView
+            android:id="@+id/grape_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="55dp"
+            android:text="@string/title_grape"
+            app:layout_constraintEnd_toStartOf="@+id/watermelon_tv"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grape_btn" />
+
+        <TextView
+            android:id="@+id/watermelon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:text="@string/title_watermelon"
+            app:layout_constraintEnd_toStartOf="@+id/fruitcate_tv"
+            app:layout_constraintTop_toBottomOf="@+id/watermelon_btn" />
+
+        <TextView
+            android:id="@+id/fruitcate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:text="@string/title_fruitcate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruitcate_btn" />
+
+        <TextView
+            android:id="@+id/taiwan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:text="@string/title_taiwan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taiwan_btn" />
+
+        <TextView
+            android:id="@+id/japan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:text="@string/title_japan"
+            app:layout_constraintEnd_toStartOf="@+id/taiwan_tv"
+            app:layout_constraintTop_toBottomOf="@+id/japan_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

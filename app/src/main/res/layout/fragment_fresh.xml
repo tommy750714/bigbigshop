@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fresh.FreshFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="316dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="40dp"
+            android:text="/講飲講食/新鮮食品"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_fresh2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/back_fresh2"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fresh_all_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="fresh"
+            android:src="@drawable/fresh"
+            app:layout_constraintEnd_toStartOf="@+id/freshseafood_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/freshseafood_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="freshseafood"
+            android:src="@drawable/freshseafood"
+            app:layout_constraintEnd_toStartOf="@+id/fruit_btn"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/fruit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="fruit"
+            android:src="@drawable/fruit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/vegetable_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="298dp"
+            android:background="@drawable/round_btn"
+            android:contentDescription="vegetable"
+            android:src="@drawable/vegetable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fresh_all_tv" />
+
+        <TextView
+            android:id="@+id/fresh_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="70dp"
+            android:text="@string/title_fresh_all"
+            app:layout_constraintEnd_toStartOf="@+id/freshseafood_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fresh_all_btn" />
+
+        <TextView
+            android:id="@+id/freshseafood_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="88dp"
+            android:text="@string/title_freshseafood"
+            app:layout_constraintEnd_toStartOf="@+id/fruit_tv"
+            app:layout_constraintTop_toBottomOf="@+id/freshseafood_btn" />
+
+        <TextView
+            android:id="@+id/fruit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="@string/title_fruit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruit_btn" />
+
+        <TextView
+            android:id="@+id/vegetable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="311dp"
+            android:text="@string/title_vegetable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetable_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
