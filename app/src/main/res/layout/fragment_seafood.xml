@@ -12,10 +12,12 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="316dp"
-            android:layout_height="29dp"
-            android:layout_marginEnd="40dp"
+            android:layout_width="333dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/border"
             android:text="/講飲講食/新鮮食品/新鮮海鮮"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +25,7 @@
             android:id="@+id/back_fresh"
             android:layout_width="0dp"
             android:layout_height="29dp"
-            android:background="@color/white"
+            android:background="@drawable/border"
             android:src="@drawable/ic_back"
             app:layout_constraintEnd_toStartOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"

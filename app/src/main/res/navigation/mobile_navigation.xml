@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.bigbigshop.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_home_name"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -38,6 +38,6 @@
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.example.bigbigshop.ui.account.AccountFragment"
-        android:label="@string/title_account"
+        android:label="@string/title_account_name"
         tools:layout="@layout/fragment_account" />
 </navigation>

@@ -4,33 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.shopping.ShoppingFragment">
+    tools:context=".ui.shopping.PickAndPay.PickAndPayFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/status"
-            app:tabMaxWidth="0dp"
-            app:tabTextAppearance="?android:attr/textAppearanceMedium"
-            app:textAllCaps="false" />
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/tabs_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:layout_constraintBottom_toTopOf="@+id/total"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
         <RelativeLayout
             android:id="@+id/total"
@@ -57,7 +35,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_pay"
                 android:layout_width="113dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
@@ -68,7 +46,7 @@
                 android:layout_marginBottom="0dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="@string/title_next"
+                android:text="@string/title_pay"
                 android:textColor="@color/white" />
 
             <TextView
@@ -80,7 +58,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toStartOf="@+id/button_next"
+                android:layout_toStartOf="@+id/button_pay"
                 android:text="$180.00"
                 android:textColor="@color/orange_bigbigshop"
                 android:textStyle="bold" />
@@ -92,7 +70,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toStartOf="@+id/button_next"
+                android:layout_toStartOf="@+id/button_pay"
                 android:text="連運費計算" />
 
             <ImageButton
@@ -112,26 +90,35 @@
 
         <RelativeLayout
             android:id="@+id/status"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/border"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="false"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border"
+                android:src="@drawable/ic_back" />
+
             <RelativeLayout
                 android:id="@+id/step_one"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_step">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/back_button">
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:layout_marginTop="11dp"
                     android:layout_marginBottom="11dp"
                     android:src="@drawable/circle1" />
@@ -141,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="16dp"
@@ -152,9 +139,9 @@
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp"
@@ -164,16 +151,17 @@
             <RelativeLayout
                 android:id="@+id/step_two"
                 android:layout_width="135dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_toEndOf="@+id/imageView4">
+                android:layout_toEndOf="@+id/imageView4"
+                android:background="@drawable/border_step">
 
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:layout_marginTop="11dp"
                     android:layout_marginBottom="11dp"
                     android:src="@drawable/circle2" />
@@ -183,7 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="16dp"
@@ -194,9 +182,9 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp"
@@ -205,9 +193,11 @@
 
             <RelativeLayout
                 android:id="@+id/step_three"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_toEndOf="@+id/imageView6">
 
                 <ImageView
@@ -215,8 +205,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="11dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginTop="15dp"
                     android:layout_marginBottom="11dp"
                     android:src="@drawable/circle3" />
 
@@ -225,16 +215,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_toEndOf="@+id/imageView7"
                     android:text="訂單完成" />
+
             </RelativeLayout>
         </RelativeLayout>
 
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/pick_and_pay_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pick_and_pay" />
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>

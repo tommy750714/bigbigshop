@@ -7,18 +7,26 @@
         <entry key="app/src/main/res/drawable-v24/ic_favorite_24.xml" value="0.2535" />
         <entry key="app/src/main/res/drawable-v24/ic_shopping_bag_24.xml" value="0.2535" />
         <entry key="app/src/main/res/drawable/arrow_back-48px.xml" value="0.1925" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.284" />
+        <entry key="app/src/main/res/drawable/border_step.xml" value="0.266" />
+        <entry key="app/src/main/res/drawable/round_btn.xml" value="0.285" />
         <entry key="app/src/main/res/drawable/roundbtn.xml" value="0.2535" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21047668457031252" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2872146606445313" />
+        <entry key="app/src/main/res/layout/fragment_discount.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/fragment_discount2.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.184375" />
         <entry key="app/src/main/res/layout/fragment_food.xml" value="0.3767440795898438" />
         <entry key="app/src/main/res/layout/fragment_fresh.xml" value="0.34104046242774566" />
         <entry key="app/src/main/res/layout/fragment_fruit.xml" value="0.38310546875000007" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/fragment_payment_finish.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_pick_and_pay.xml" value="0.22794591113972956" />
         <entry key="app/src/main/res/layout/fragment_seafood.xml" value="0.25643157958984364" />
-        <entry key="app/src/main/res/layout/fragment_shopping.xml" value="0.2717391304347826" />
+        <entry key="app/src/main/res/layout/fragment_shopping.xml" value="1.0888037904126853" />
         <entry key="app/src/main/res/layout/fragment_vegetable.xml" value="0.184375" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_cosmetic.xml" value="0.2535" />
