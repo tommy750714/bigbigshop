@@ -4,33 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.shopping.ShoppingFragment">
+    tools:context=".ui.shopping.PaymentFinish.PaymentFinishFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/status"
-            app:tabMaxWidth="0dp"
-            app:tabTextAppearance="?android:attr/textAppearanceMedium"
-            app:textAllCaps="false" />
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/tabs_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:layout_constraintBottom_toTopOf="@+id/total"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
         <RelativeLayout
             android:id="@+id/total"
@@ -52,12 +30,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="付款總額"
+                android:text="已付款總額"
                 android:textAlignment="inherit"
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_finish"
                 android:layout_width="113dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
@@ -68,7 +46,7 @@
                 android:layout_marginBottom="0dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="@string/title_next"
+                android:text="完成"
                 android:textColor="@color/white" />
 
             <TextView
@@ -80,7 +58,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toStartOf="@+id/button_next"
+                android:layout_toStartOf="@+id/button_finish"
                 android:text="$180.00"
                 android:textColor="@color/orange_bigbigshop"
                 android:textStyle="bold" />
@@ -92,7 +70,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toStartOf="@+id/button_next"
+                android:layout_toStartOf="@+id/button_finish"
                 android:text="連運費計算" />
 
             <ImageButton
@@ -123,8 +101,7 @@
             <RelativeLayout
                 android:id="@+id/step_one"
                 android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_step">
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -205,19 +182,26 @@
 
             <RelativeLayout
                 android:id="@+id/step_three"
-                android:layout_width="95dp"
+                android:layout_width="104dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="0dp"
-                android:layout_toEndOf="@+id/imageView6">
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:background="@drawable/border_step">
 
                 <ImageView
                     android:id="@+id/imageView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="11dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_marginBottom="11dp"
+                    android:layout_toStartOf="@+id/textView8"
                     android:src="@drawable/circle3" />
 
                 <TextView
@@ -225,16 +209,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginBottom="17dp"
                     android:text="訂單完成" />
+
             </RelativeLayout>
         </RelativeLayout>
 
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status"
+            app:layout_constraintVertical_bias="0.0">
 
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paid" />
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>

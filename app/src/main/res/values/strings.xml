@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">bigbigshop</string>
-    <string name="title_home">BigBigShop</string>
+    <string name="title_home_name">BigBigShop</string>
+    <string name="title_home">主頁</string>
     <string name="title_dashboard">商品分類</string>
     <string name="title_favorite">喜愛商品</string>
     <string name="title_shopping">購物車</string>
     <string name="title_account">帳戶/設定</string>
+    <string name="title_account_name">我的檔案</string>
     <string name="title_food">講飲講食</string>
     <string name="title_cosmetics">護膚化妝</string>
     <string name="title_care">個人護理</string>
@@ -57,5 +59,7 @@
     <string name="title_mushroom">菇菌類</string>
     <string name="title_soap">湯包</string>
     <string name="title_otherveg">其他蔬菜</string>
+    <string name="title_next">下一步</string>
+    <string name="title_pay">立即付款</string>
 
 </resources>
