@@ -35,7 +35,7 @@ class PaymentFinishFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val seafoodViewModel = ViewModelProvider(this).get(PaymentFinishViewModel::class.java)
+        val paymentFinishViewModel = ViewModelProvider(this).get(PaymentFinishViewModel::class.java)
         _binding = FragmentPaymentFinishBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
