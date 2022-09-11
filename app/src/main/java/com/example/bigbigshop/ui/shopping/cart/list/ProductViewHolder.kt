@@ -18,6 +18,7 @@ class ProductViewHolder(
         productCellBinding.name.text = product.name
         productCellBinding.price.text = product.price
         productCellBinding.oPrice.text = product.oPrice
+        productCellBinding.description.text = product.description
         productCellBinding.quantity.text = product.quantity.toString()
         productCellBinding.checkBox.isChecked = product.isChecked
 

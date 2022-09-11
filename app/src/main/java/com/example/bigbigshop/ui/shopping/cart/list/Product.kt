@@ -8,6 +8,7 @@ class Product (
     var name: String,
     var price: String,
     var oPrice: String,
+    var description: String,
     var quantity: Int = 1,
     var isChecked: Boolean = false,
     val id: Int? = productList.size

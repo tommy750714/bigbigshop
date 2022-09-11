@@ -70,23 +70,26 @@ class CartFragment : Fragment() {
 
     private fun populateProducts() {
         productList.clear()
-        val products1 = Product(R.drawable.food, "原味道", "兒童口罩", "HK$244", "HK500",1)
+        val products1 = Product(R.drawable.crab_meat, "原味道", "原味道 韓國即食醬油蟹肉 增量150g (最佳賞味期限：2022年10月11號)", "HK$265", "","每罐含2-3隻韓國大花蟹蟹肉及蟹膏精華",1)
         productList.add(products1)
 
-        val products2 = Product(R.drawable.fresh, "大口仔", "成人口罩", "HK$128", "HK188", 1)
+        val products2 = Product(R.drawable.abalone, "原味道", "原味道紅燒鮑魚6隻裝", "HK$208", "","【原味道】每罐6隻，即開即食，口感爽滑，無加防腐劑，好味健康", 1)
         productList.add(products2)
 
-        val products3 = Product(R.drawable.food, "細口仔", "兒童口罩", "HK$88", "HK123",1)
+        val products3 = Product(R.drawable.oyster, "榮記", "榮記 流浮山生曬金蠔 300g (半斤裝)", "HK$398", "HK$438","流浮山生蠔曾富盛名，生蠔更成為流浮山地道特產，故此流浮山蠔吸引不少的旅客慕名而來。",1)
         productList.add(products3)
 
-        val products4 = Product(R.drawable.fresh, "大口仔", "成人口罩", "HK$128", "HK188", 1)
+        val products4 = Product(R.drawable.duck_leg, "住家蔡", "蔡市場-生鴨髀 420G", "HK$29.9", "HK$38.9","CHOI-Duck Legs 420G", 1)
         productList.add(products4)
 
-        val products5 = Product(R.drawable.food, "細口仔", "兒童口罩", "HK$88", "HK123",1)
+        val products5 = Product(R.drawable.beef, "Gourmet", "澳洲 M7/M8穀飼和牛 - 3包套餐", "HK$468", "HK498","於澳洲牧場培養和繁殖的日本牛種，需跟從日本和牛的飼養規定，所以油花分佈亦不遜於日本和牛。",1)
         productList.add(products5)
 
-        val products6 = Product(R.drawable.fresh, "大口仔", "成人口罩", "HK$128", "HK188", 1)
+        val products6 = Product(R.drawable.chicken, "住家蔡", "蔡市場-去皮雞柳 1000G", "HK$49.9", "HK68.9","CHOI-Chicken Tenderloins (Skinless) 1000G", 1)
         productList.add(products6)
+
+        val products7 = Product(R.drawable.shamp, "住家蔡", "尚蔡-L2級 阿根廷紅蝦, 2KG", "HK$262", "HK$320","Big Big 刺身推介", 1)
+        productList.add(products7)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
