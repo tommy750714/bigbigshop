@@ -51,7 +51,7 @@ class CartFragment : Fragment() {
             productAdapter.notifyDataSetChanged()
             productAdapter.notifyItemRangeChanged(0, productList.size)
             binding.selectAll.isChecked = false
-            }
+        }
 
         return root
     }
